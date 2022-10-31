@@ -9,7 +9,7 @@ const Contact = require('../routes/contactRoute.js');
 const Err404 = require('../routes/errorRoute.js');
 
 
-const port = process.env.PORT;
+const port = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
