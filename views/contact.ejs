@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/headerlinks") %>
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <%- include("./partials/navbar") %>
+    <div class="container mx-auto details">
+        <img src="/images/contact.jpg" alt="contact us" width="200px" height="200px">
+        <div class="info">
+            <h1 style="font-weight: 30px; text-decoration:underline; margin-top:-15px;">Contact me</h1>
+            
+            <!-- contact form -->
+            <form action="/contact" method="post" class="about-me get-in-touch">
+                <h2>Get In Touch</h2>
+                <div class="contact-details">
+                    <section class="phone"><i class="fa-solid fa-phone" style="color: dimgray;"></i> <a href="tel:+917545869948">+91-7545869948</a></section>
+                    <section class="email"><i class="fa-light fa-at" style="font-family: sans-serif; color: dimgray;"></i> <a href="mailto:mdshahzar23@gmail.com">mdshahzar23@gmail.com</a></section>
+                </div>
+                <p>Or</p>
+
+                <!-- submission details either submitted or not -->
+                <% if(msg.length > 0) { %>
+                    <% if(msg.length === 22) { %>
+                        <div class="status" style="color: green;"><%= msg %></div>
+                    <% }else {%>
+                        <div class="status" style="color: red;"><%= msg %></div>
+                    <% } %>
+
+                <% }%>
+
+                <!-- contact form input section -->
+                <div class="contact-form">
+                    <div class="your-details">
+                        <input type="text" placeholder="Your name" name="name">
+                        <input class="input-detail" type="email" placeholder="Your email" name="email">
+                        <input type="tel" placeholder="Phone number" name="phone">
+                    </div>
+                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <button class="resume project-link" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <%- include("./partials/footer") %>
+</body>
+
+</html>

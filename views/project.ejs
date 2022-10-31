@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/headerlinks.ejs") %>
+</head>
+
+<body>
+    <%- include("./partials/navbar.ejs") %>
+    <div class="container mx-auto details">
+        <img src="/images/project.jpg" alt="Project" width="200px" height="200px">
+        <div class="info">
+            <h1 style="font-weight: 30px; text-decoration:underline; margin-top:-15px;">Project</h1>
+            <div class="about-me project">
+                <div class="project-detail">
+                    <img src="/images/weather.png" alt="weather" width="150px" height="150px">
+                    <h2>Live weather app</h2>
+                    <p>Used openweatherapi to fetch live weather details by city name</p>
+                </div>
+                <a href="#"><button class="resume project-link">Visit</button></a>
+            </div>
+        </div>
+    </div>
+    <%- include("./partials/footer") %>
+</body>
+
+</html>
