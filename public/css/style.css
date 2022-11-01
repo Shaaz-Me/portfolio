@@ -248,7 +248,7 @@ body {
         width: 30rem;
     }
 
-    .footer{
+    .footer,.footer h3,.footer h4{
         font-size: 0.9em;
     }
 
@@ -304,7 +304,7 @@ body {
         margin-left: 0;
     }
 
-    .footer{
+    .footer,.footer h3,.footer h4{
         font-size: 0.8em;
     }
 }
@@ -343,7 +343,7 @@ body {
         font-size: 0.7em;
     }
 
-    .footer{
+    .footer,.footer h3,.footer h4{
         font-size: 0.5em;
     }
 
