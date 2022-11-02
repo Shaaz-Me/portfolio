@@ -349,7 +349,7 @@ body {
 
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
     .main-nav-left,.main-nav-right{
         top: 118px;
         border-bottom: 30px solid transparent;
