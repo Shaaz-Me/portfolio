@@ -349,9 +349,9 @@ body {
 
 }
 
-/* @media screen and (max-width: 250px) {
+@media screen and (max-width: 250px) {
     .main-nav-left,.main-nav-right{
         top: 118px;
         border-bottom: 30px solid transparent;
     }
-} */
+}
