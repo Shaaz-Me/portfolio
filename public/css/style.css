@@ -16,6 +16,7 @@ body {
     background-color: var(--body-bg);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .row {
@@ -50,28 +51,8 @@ body {
     color: #fff;
 }
 
-.main-nav-left {
-    z-index: -1;
-    left: 0%;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-bottom: 150px solid transparent;
-    border-right: 50vw solid var(--nav-color-bg);
-}
-
 .nav-option:hover {
     color: black;
-}
-
-.main-nav-right {
-    z-index: -1;
-    right: 0%;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-bottom: 150px solid transparent;
-    border-left: 50vw solid var(--nav-color-bg);
 }
 
 
@@ -79,7 +60,7 @@ body {
 .details {
     display: flex;
     flex-direction: column;
-    margin: -100px auto 0 auto;
+    margin: 25px auto 0 auto;
     text-align: center;
     justify-items: center;
     margin-block-end: 35px;
@@ -219,14 +200,6 @@ body {
 
 
 @media screen and (max-width: 992px) {
-    .main-nav-right {
-        border-bottom: 100px solid transparent;
-    }
-
-    .main-nav-left {
-        border-bottom: 100px solid transparent;
-    }
-
     .navbar{
         justify-content: space-between;
     }
@@ -236,7 +209,7 @@ body {
     }
 
     .details {
-        margin-top: -80px;
+        margin-top: 25px;
     }
 
     .get-in-touch{
@@ -259,20 +232,13 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-    .main-nav-left {
-        border-bottom: 70px solid transparent;
-    }
-
-    .main-nav-right {
-        border-bottom: 70px solid transparent;
-    }
 
     .custom-nav {
         padding-left: 50px;
     }
 
     .details{
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .about-me {
@@ -318,14 +284,6 @@ body {
         padding: 0;
     }
 
-    .main-nav-left {
-        border-bottom: 40px solid transparent;
-    }
-
-    .main-nav-right {
-        border-bottom: 40px solid transparent;
-    }
-
     .details img{
         width: 120px;
         height: 120px;
@@ -347,4 +305,12 @@ body {
         font-size: 0.7em;
     }
 
+}
+
+@media screen and (max-width: 320px) {
+    .details img{
+        width: 80px;
+        height: 80px;
+        border-radius: 25px;
+    }
 }
