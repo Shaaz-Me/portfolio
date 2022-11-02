@@ -220,11 +220,11 @@ body {
 
 @media screen and (max-width: 992px) {
     .main-nav-right {
-        border-bottom: 120px solid transparent;
+        border-bottom: 100px solid transparent;
     }
 
     .main-nav-left {
-        border-bottom: 120px solid transparent;
+        border-bottom: 100px solid transparent;
     }
 
     .navbar li {
@@ -256,11 +256,11 @@ body {
 
 @media screen and (max-width: 850px) {
     .main-nav-left {
-        border-bottom: 80px solid transparent;
+        border-bottom: 70px solid transparent;
     }
 
     .main-nav-right {
-        border-bottom: 80px solid transparent;
+        border-bottom: 70px solid transparent;
     }
 
     .custom-nav {
@@ -315,11 +315,11 @@ body {
     }
 
     .main-nav-left {
-        border-bottom: 60px solid transparent;
+        border-bottom: 40px solid transparent;
     }
 
     .main-nav-right {
-        border-bottom: 60px solid transparent;
+        border-bottom: 40px solid transparent;
     }
 
     .details {
@@ -347,11 +347,4 @@ body {
         font-size: 0.7em;
     }
 
-}
-
-@media screen and (max-width: 320px) {
-    .main-nav-left,.main-nav-right{
-        top: 118px;
-        border-bottom: 30px solid transparent;
-    }
 }
