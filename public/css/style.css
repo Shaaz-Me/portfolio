@@ -256,11 +256,11 @@ body {
 
 @media screen and (max-width: 850px) {
     .main-nav-left {
-        border-bottom: 100px solid transparent;
+        border-bottom: 80px solid transparent;
     }
 
     .main-nav-right {
-        border-bottom: 100px solid transparent;
+        border-bottom: 80px solid transparent;
     }
 
     .custom-nav {
@@ -310,12 +310,16 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    .navbar{
+        padding: 0;
+    }
+
     .main-nav-left {
-        border-bottom: 70px solid transparent;
+        border-bottom: 60px solid transparent;
     }
 
     .main-nav-right {
-        border-bottom: 70px solid transparent;
+        border-bottom: 60px solid transparent;
     }
 
     .details {
@@ -344,3 +348,10 @@ body {
     }
 
 }
+
+/* @media screen and (max-width: 250px) {
+    .main-nav-left,.main-nav-right{
+        top: 118px;
+        border-bottom: 30px solid transparent;
+    }
+} */
