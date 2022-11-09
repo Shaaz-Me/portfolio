@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/headerlinks") %>
+</head>
+
+<body>
+    <%- include("./partials/navbar") %>
+
+    <!-- about section -->
+        <div class="container mx-auto details">
+            <img src="/images/about.png" alt="Project" width="200px" height="200px">
+            <div class="info">
+                <div class="about-section">
+                    <section class="all-section selected" id="skill" onclick="opentab('skills')">Skill</section>
+                    <section class="all-section" id="education" onclick="opentab('educations')">Education</section>
+                </div>
+                <div class="about-me project">
+
+                    <!-- skills details  -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Coding</span><br />Java | Python(Basic) | Data Structures & Algorithm
+                            </li>
+                            <li><span>Web Development</span><br />HTML | CSS | JavaScript | Node.js | Express.js</li>
+                            <li><span>Database</span><br />MongoDB | SQL</li>
+                            <li>
+                                <span>Software/ Packages used</span><br /> VS Code | Postman
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- educations details  -->
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li>
+                                <span>Integrated MSc</span><br />National Institute of
+                                Technology, Patna <br />(2018 -2023)
+                            </li>
+                            <li>
+                                <span>Intermediate</span><br />Allama Iqbal College
+                                <br />Biharsharif, Bihar
+                            </li>
+                            <li>
+                                <span>Matriculation</span><br />Adarsh High School
+                                <br />Biharsharif, Bihar
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <%- include("./partials/footer") %>
+
+
+
+        <script src="/js/aboutSection.js"></script>
+</body>
+
+</html>

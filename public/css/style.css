@@ -16,6 +16,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
     min-height: 100vh;
     background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .custom-nav {
@@ -173,9 +176,75 @@ body {
 }
 
 
+
+
+
+
+
+
+/* about page */
+
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-section section {
+    font-size: 20px;
+    padding: 10px;
+    width: 17%;
+    border: 1px solid var(--nav-color-bg);
+    cursor: pointer;
+    background-color: var(--body-bg);
+    color: var(--nav-color-bg);
+}
+
+.about-section .selected {
+    background-color: var(--nav-color-bg);
+    color: var(--body-bg);
+}
+
+#skill {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#education {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.tab-contents ul li span {
+    color: var(--nav-color-bg);
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
 /* footer style */
 .footer {
-    margin-top: auto;
     text-align: center;
     background-color: var(--nav-color-bg);
     color: #241d1d;
@@ -213,6 +282,10 @@ body {
 
     .contact-form textarea{
         width: 30rem;
+    }
+
+    .about-section section {
+        width: 20%;
     }
 
     .footer,.footer h3,.footer h4{
@@ -269,6 +342,20 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about-section section {
+        width: 25%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-section section {
+        width: 23%;
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .navbar{
         padding: 0;
@@ -289,10 +376,17 @@ body {
 
     .about-me {
         width: 80vw;
+        font-size: 16px;
     }
 
     .status{
         font-size: 0.7em;
+    }
+
+    .about-section section {
+        width: 120px;
+        font-size: 10px;
+        padding: 10px;
     }
 
 }
@@ -302,5 +396,11 @@ body {
         width: 80px;
         height: 80px;
         border-radius: 25px;
+    }
+
+    .about-section section {
+        width: 75px;
+        font-size: 5px;
+        padding: 6px 0;
     }
 }

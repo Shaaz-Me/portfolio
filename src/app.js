@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const Home = require('../routes/homeRoute.js');
 const Project = require('../routes/projectRoute.js');
+const About = require('../controllers/aboutController.js');
 const Contact = require('../routes/contactRoute.js');
 const Err404 = require('../routes/errorRoute.js');
 
@@ -20,6 +21,7 @@ app.set('view engine','ejs');
 app.use("/", Home);
 app.use("/project", Project);
 app.use("/contact", Contact);
+app.use("/about", About);
 app.use("*", Err404);
 
 
