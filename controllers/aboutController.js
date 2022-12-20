@@ -3,4 +3,4 @@ const aboutController = (req,res) => {
 };
 
 
-module.exports = aboutController;
+export default aboutController;

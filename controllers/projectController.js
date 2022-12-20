@@ -3,4 +3,4 @@ const projectController = (req,res) => {
 };
 
 
-module.exports = projectController;
+export default projectController;

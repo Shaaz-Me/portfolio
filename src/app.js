@@ -1,20 +1,22 @@
-require('dotenv').config();
-const express = require('express');
+import dotenv from 'dotenv';
+dotenv.config();
+import express from 'express';
 const app = express();
-const bodyParser = require('body-parser');
-const path = require('path');
-const Home = require('../routes/homeRoute.js');
-const Project = require('../routes/projectRoute.js');
-const About = require('../routes/aboutRoute.js');
-const Contact = require('../routes/contactRoute.js');
-const Err404 = require('../routes/errorRoute.js');
+import bodyParser from 'body-parser';
+const { urlencoded } = bodyParser;
+import { fileURLToPath } from 'url';
+import path from 'path';
+import Home from '../routes/homeRoute.js';
+import Project from '../routes/projectRoute.js';
+import About from '../routes/aboutRoute.js';
+import Contact from '../routes/contactRoute.js';
+import Err404 from '../routes/errorRoute.js';
 
 
 const port = process.env.PORT || 8000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-
-app.use(express.static(path.join(__dirname,"..","public")));
+app.use(urlencoded({ extended: false }));
+app.use(express.static(path.join(path.dirname(fileURLToPath(import.meta.url)),"..","public")));
 
 app.set('view engine','ejs');
 
@@ -28,4 +30,4 @@ app.use("*", Err404);
 
 
 
-app.listen(port, () => {});
+app.listen(port, () => {console.log(`Server is started`);});

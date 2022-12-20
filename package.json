@@ -11,6 +11,7 @@
   "keywords": [],
   "author": "Md Shahzar",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",

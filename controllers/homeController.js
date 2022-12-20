@@ -3,4 +3,4 @@ const homeController = (req,res) => {
 };
 
 
-module.exports = homeController;
+export default homeController;

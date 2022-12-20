@@ -4,4 +4,4 @@ const errorController = (req,res) => {
 
 
 
-module.exports = errorController;
+export default errorController;

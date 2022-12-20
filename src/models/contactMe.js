@@ -1,7 +1,8 @@
-const mongoose = require("mongoose");
-const validator = require("validator");
+import { Schema, model } from "mongoose";
+import validator from 'validator';
+const { isEmail } = validator;
 
-const contactMe = new mongoose.Schema({
+const contactMe = new Schema({
     name:{
         type: String,
         required: true
@@ -10,7 +11,7 @@ const contactMe = new mongoose.Schema({
         type: String,
         required: true,
         validate(value){
-            if(!validator.isEmail(value)){
+            if(!isEmail(value)){
                 throw new Error("Invalid Email")
             }
         }
@@ -28,6 +29,6 @@ const contactMe = new mongoose.Schema({
 
 // we will create a new collection
 
-const Contact = new mongoose.model('Contact',contactMe);
+const Contact = new model('Contact',contactMe);
 
-module.exports = Contact;
+export default Contact;
