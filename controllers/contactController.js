@@ -4,7 +4,7 @@ import Contact from "../src/models/contactMe.js";
 class contactController{
 
     static get = (req, res) => {
-        res.render('contact', { msg: "" });
+        res.render('contact');
     };
 
 
@@ -19,9 +19,9 @@ class contactController{
             }
             const user = new Contact(contacter);
             const result = await user.save();
-            res.status(201).render('contact', { msg: "Submitted Successfully" });
+            res.send({success:true});
         } catch (err) {
-            res.status(400).render('contact', { msg: "Invalid details" });
+            res.send({success:false});
         }
     }
 }

@@ -15,6 +15,7 @@ import Err404 from '../routes/errorRoute.js';
 
 const port = process.env.PORT || 8000;
 
+app.use(express.json());
 app.use(urlencoded({ extended: false }));
 app.use(express.static(path.join(path.dirname(fileURLToPath(import.meta.url)),"..","public")));
 
